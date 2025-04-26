@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>place order</title>
+</head>
+<body>
+  <form class="order-form">
+
+    <h2>PLACE YOUR ORDER</h2>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required/>
+
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" name="phone" required/>
+
+    <label for="address">Address</label>
+    <textarea id="address" name="address"required></textarea>
+
+    <div class="payment-option">
+      <label><input type="radio" name="payment" value="cash" required/>Cash on delivery</label>
+
+      <div class="payment-option">
+        <label><input type="radio" name="payment" value="online" required/>Upi-pay</label>
+
+        <div class="payment-option">
+          <label><input type="radio" name="payment" value="online" required/>Phone-pay</label>
+
+      </div>
+
+      <button type="submit"><a href="index.html" class="btn">place order</a></button>
+
+
+
+  <style>
+    body{
+      font-family: sans-serif;
+
+background:radial-gradient(circle at center,rgb(172, 223, 243),rgb(243, 181, 192),rgb(255, 255, 123),rgb(162, 231, 162));
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.order-form{
+  background:linear-gradient(tomato,yellow,rgb(184, 184, 248),pink) ;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.order-form h2{
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.order-form label{
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgb(14, 1, 1);
+}
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  /* font-weight: bold; */
+  border-radius: 5px;
+  font-size: 14px;
+  background: skyblue;
+}
+
+.order-form textarea{
+  resize: none;
+  height: 80px;
+}
+
+.payment-option{
+  margin-bottom: 15px;
+}
+
+.payment-option label{
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.order-form button{
+  width: 100%;
+  padding: 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.order-form button:hover{
+  background-color: #219150;
+  text-decoration: none;
+
+}
+  </style>
+  
+</body>
+</html>

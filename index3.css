@@ -1,0 +1,103 @@
+body{
+    /* background: radial-gradient(circle at center,yellow,aqua,tomato); */
+    
+background:radial-gradient(circle at center,rgb(172, 223, 243),rgb(243, 181, 192),rgb(255, 255, 123),rgb(162, 231, 162))
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0,0,0);
+    padding: 20px;
+    text-shadow: 1px 4px 8px rgb(233, 16, 41);
+}
+
+ nav{
+    display: grid;
+    place-items: center;
+}
+
+nav ul a{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: 2s ease-in;
+    font-size: 18px;
+}
+
+nav ul a:hover{
+    background-color: green;
+    color: white;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.item img:hover{
+    transform: scale(1.04);
+    /* opacity: 0.8; */
+    border-radius: 20px;
+    border: solid rgb(32, 35, 226);
+}
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+.item .button{
+    padding: 5PX 30PX;
+    /* border:  solid rgb(56, 21, 230); */
+    outline: none;
+    background-color: rgb(22, 32, 234);
+    color: antiquewhite;
+    cursor: pointer;
+    border-radius: 10PX;
+    font-size: 20px;
+    display: inline-block;
+    /* display: block; */
+    /* display: flex; */
+    /* justify-content:center; */
+    /* column-gap: 100px; */
+    margin: 0 auto;
+    transition: 0.2s all;
+    text-decoration: none;
+    /* text-align: center; */
+}
+.item .button:hover{
+    transform: scale(1.08);
+    background-color: rgb(15, 214, 28);
+}
+@media screen and (max-width:1000px){
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width: 76px){
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+
+
